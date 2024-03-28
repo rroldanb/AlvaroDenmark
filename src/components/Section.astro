@@ -9,46 +9,46 @@ import FooterMenu from './FooterMenu.astro';
   data-header-color={color}
   id={id}
 >
-  <div class="z-30 relative h-full pt-40 flex flex-col  bg-green-800/40">
-    <header class="w-auto p-5 mx-auto lg:mb-80 md:mb-40">
-      <h2 class={`${textColor} pt-0 text-[40px] font-medium bg-slate-500/50`}>
+  <div class="z-30 relative h-full pt-20 sm:pt-20 md:pt-40 flex flex-col  bg-green-800/20">
+    <header class="w-auto p-5 mx-auto  sm:mb-0 lg:mb-80">
+      <h2 class={`${textColor} pt-0 text-[25px] sm:text-[30px] md:text-[40px] bg-slate-500/50`}>
         {title}
       </h2>
       <p class={`${textColor} text-sm bg-slate-500/50`}>
         {subtitle}
       </p>
     </header>
-    <section class={`${textColor}  bg-slate-500/70 mt-2/3 sm:w-full lg:w-2/3 mx-auto flex sm:flex-col md:flex-row justify-center `}>
-      <div class="mx-2">
-        <h3 class="font-bold pt-3 ">
-          Descripción
-        </h3>
-        <p class={`${textColor} text-sm mt-2 w-2/9 text-justify p-2 px-5`}>
-          <!-- {subtitle} -->
-          - <strong> Lorem ipsum dolor sit, </strong> amet consectetur adipisicing elit. Odit aliquid ea eaque aliquam corrupti voluptatum reprehenderit iusto corporis iste et voluptatibus molestiae, expedita enim magnam accusantium, nostrum quasi voluptate molestias?
-        </p>        
-      </div>
-      <div class="mx-2">
-        <h3 class="font-bold pt-3 ">
-          Detalles
-        </h3>
-        <p class={`${textColor} text-sm mt-2 w-2/9 text-justify p-2 px-5`}>
-          <!-- {subtitle} -->
-          - <strong> Lorem ipsum dolor sit, </strong> amet consectetur adipisicing elit. Odit aliquid ea eaque aliquam corrupti voluptatum reprehenderit iusto corporis iste et voluptatibus molestiae, expedita enim magnam accusantium, nostrum quasi voluptate molestias?
-        </p>        
-      </div>
-      <div class="mx-2">
-        <h3 class="font-bold pt-3 ">
-          Alcances
-        </h3>
-        <p class={`${textColor} text-sm mt-2 w-2/9 text-justify p-2 px-5`}>
-          <!-- {subtitle} -->
-          - <strong> Lorem ipsum dolor sit, </strong> amet consectetur adipisicing elit. Odit aliquid ea eaque aliquam corrupti voluptatum reprehenderit iusto corporis iste et voluptatibus molestiae, expedita enim magnam accusantium, nostrum quasi voluptate molestias?
-        </p>        
-      </div>
-    </section>
-
+    
     <footer class="flex flex-col flex-grow justify-end pb-20 z-30">
+      <section class={`${textColor}  bg-slate-500/70  sm:w-full lg:w-2/3 mx-auto flex sm:flex-col md:flex-row justify-center `}>
+        <div class="mx-2">
+          <h3 class="font-bold pt-3 ">
+            Descripción
+          </h3>
+          <p class={`${textColor} text-[10px] md:text-[20px]  mt-2 w-2/9 text-justify sm:px-1`}>
+            <!-- {subtitle} -->
+            - <strong> Lorem ipsum dolor sit, </strong> amet consectetur adipisicing elit. Odit aliquid ea eaque aliquam corrupti voluptatum reprehenderit iusto corporis iste et voluptatibus molestiae, expedita enim magnam accusantium, nostrum quasi voluptate molestias?
+          </p>        
+        </div>
+        <div class="mx-2">
+          <h3 class="font-bold pt-3 ">
+            Detalles
+          </h3>
+          <p class={`${textColor} text-[10px] md:text-[20px]  mt-2 w-2/9 text-justify sm:px-1`}>
+            <!-- {subtitle} -->
+            - <strong> Lorem ipsum dolor sit, </strong> amet consectetur adipisicing elit. Odit aliquid ea eaque aliquam corrupti voluptatum reprehenderit iusto corporis iste et voluptatibus molestiae, expedita enim magnam accusantium, nostrum quasi voluptate molestias?
+          </p>        
+        </div>
+        <div class="mx-2">
+          <h3 class="font-bold pt-3 ">
+            Alcances
+          </h3>
+          <p class={`${textColor} text-[10px] md:text-[20px]  mt-2 w-2/9 text-justify sm:px-1`}>
+            <!-- {subtitle} -->
+            - <strong> Lorem ipsum dolor sit, </strong> amet consectetur adipisicing elit. Odit aliquid ea eaque aliquam corrupti voluptatum reprehenderit iusto corporis iste et voluptatibus molestiae, expedita enim magnam accusantium, nostrum quasi voluptate molestias?
+          </p>        
+        </div>
+      </section>
       <slot name="footer" />
       <!-- Contidionally load footer: -->
       {showFooterContent && <FooterMenu />}
