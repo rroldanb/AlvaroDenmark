@@ -5,38 +5,47 @@ import FooterMenu from './FooterMenu.astro';
 ---
 
 <section
-  class="landing-section bg-black h-screen w-screen text-center overflow-hidden relative"
+  class="landing-section bg-black h-screen w-auto text-center overflow-hidden relative"
   data-header-color={color}
   id={id}
 >
-  <div class="z-30 relative h-full pt-40 flex flex-col">
-    <header>
-      <h2 class={`${textColor} pt-0 w-25 text-[40px] font-medium bg-slate-500/50`}>
+  <div class="z-30 relative h-full pt-40 flex flex-col  bg-green-800/40">
+    <header class="w-auto p-5 mx-auto lg:mb-80 md:mb-40">
+      <h2 class={`${textColor} pt-0 text-[40px] font-medium bg-slate-500/50`}>
         {title}
       </h2>
       <p class={`${textColor} text-sm bg-slate-500/50`}>
         {subtitle}
       </p>
     </header>
-    <section class={`${textColor}  bg-slate-500/70 mt-80`}>
-      <h3 class="font-bold">
-        Descripción
-      </h3>
-      <div class="flex flex-row justify-center " >
+    <section class={`${textColor}  bg-slate-500/70 mt-2/3 sm:w-full lg:w-2/3 mx-auto flex sm:flex-col md:flex-row justify-center `}>
+      <div class="mx-2">
+        <h3 class="font-bold pt-3 ">
+          Descripción
+        </h3>
         <p class={`${textColor} text-sm mt-2 w-2/9 text-justify p-2 px-5`}>
           <!-- {subtitle} -->
           - <strong> Lorem ipsum dolor sit, </strong> amet consectetur adipisicing elit. Odit aliquid ea eaque aliquam corrupti voluptatum reprehenderit iusto corporis iste et voluptatibus molestiae, expedita enim magnam accusantium, nostrum quasi voluptate molestias?
         </p>        
+      </div>
+      <div class="mx-2">
+        <h3 class="font-bold pt-3 ">
+          Detalles
+        </h3>
         <p class={`${textColor} text-sm mt-2 w-2/9 text-justify p-2 px-5`}>
           <!-- {subtitle} -->
           - <strong> Lorem ipsum dolor sit, </strong> amet consectetur adipisicing elit. Odit aliquid ea eaque aliquam corrupti voluptatum reprehenderit iusto corporis iste et voluptatibus molestiae, expedita enim magnam accusantium, nostrum quasi voluptate molestias?
-        </p>
-        <p class={`${textColor} text-sm mt-2 w-2/9  text-justify p-2 px-5`}>
+        </p>        
+      </div>
+      <div class="mx-2">
+        <h3 class="font-bold pt-3 ">
+          Alcances
+        </h3>
+        <p class={`${textColor} text-sm mt-2 w-2/9 text-justify p-2 px-5`}>
           <!-- {subtitle} -->
           - <strong> Lorem ipsum dolor sit, </strong> amet consectetur adipisicing elit. Odit aliquid ea eaque aliquam corrupti voluptatum reprehenderit iusto corporis iste et voluptatibus molestiae, expedita enim magnam accusantium, nostrum quasi voluptate molestias?
-        </p>
+        </p>        
       </div>
-
     </section>
 
     <footer class="flex flex-col flex-grow justify-end pb-20 z-30">

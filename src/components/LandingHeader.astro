@@ -35,19 +35,26 @@ import Logo from "./Logo.astro"
   </nav>
 
   <nav id="modal-menu" class=" hidden xl:hidden flex flex-col bg-slate-500/50 fixed top-0 left-0 right-0 bottom-0 ">
-    <button id="close-btn" class=" w-screen flex justify-end p-5">
-      <img  class="text-black h-6 " src="/close-icon.svg" alt="close image">
+    <button id="close-btn" class=" w-screen flex justify-end p-4">
+      <img  class="text-white h-6 " src="/close-icon.svg" alt="close image">
     </button>
       <ul
-      class="flex flex-col mt-4 [&>li>a]:transition-colors [&>li]:m-3  [&>li>a]:flex [&>li>a]:justify-between [&>li>a]:duration-200 [&>li>a]:text-black [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-6 [&>li>a]:py-3 [&>li>a]:rounded-md [&>li>a]:w-full"
+      class="flex flex-col mt-2 
+      [&>li]:m-2  
+      [&>li>a]:transition-colors 
+      [&>li>a]:flex [&>li>a]:justify-end 
+      [&>li>a]:duration-200 [&>li>a]:text-white 
+      [&>li>a]:font-small [&>li>a]:inline-block 
+      [&>li>a]:px-6 [&>li>a]:py-0 
+      [&>li>a]:rounded-md [&>li>a]:w-full"
       >
-        <li><a class="hover:bg-slate-100" href="#home"> Inicio <img class="h-5" alt="arrow icon" src="/arrow-icon.svg"></a> </li>
-        <li><a class="hover:bg-slate-100" href="#model-s">Casa S<img class="h-5" alt="arrow icon" src="/arrow-icon.svg"></a></li>
-        <li><a class="hover:bg-slate-100" href="#model-3">Casa 3<img class="h-5" alt="arrow icon" src="/arrow-icon.svg"></a></li>
-        <li><a class="hover:bg-slate-100" href="#model-x">Casa X<img class="h-5" alt="arrow icon" src="/arrow-icon.svg"></a></li>
-        <li><a class="hover:bg-slate-100" href="#model-y">Casa Y<img class="h-5" alt="arrow icon" src="/arrow-icon.svg"></a></li>
-        <li><a class="hover:bg-slate-100" href="#powerwall">Proyectos<img class="h-5" alt="arrow icon" src="/arrow-icon.svg"></a></li>
-        <li><a class="hover:bg-slate-100" href="#accesorios">Construcción<img class="h-5" alt="arrow icon" src="/arrow-icon.svg"></a></li>
+        <li><a class="hover:bg-slate-100" href="#home"> Inicio </a> </li>
+        <li><a class="hover:bg-slate-100" href="#model-s">Casa S</a></li>
+        <li><a class="hover:bg-slate-100" href="#model-3">Casa 3</a></li>
+        <li><a class="hover:bg-slate-100" href="#model-x">Casa X</a></li>
+        <li><a class="hover:bg-slate-100" href="#model-y">Casa Y</a></li>
+        <li><a class="hover:bg-slate-100" href="#powerwall">Proyectos</a></li>
+        <li><a class="hover:bg-slate-100" href="#accesorios">Construcción</a></li>
     </ul>
   </nav>
 
