@@ -6,7 +6,7 @@ import Section from "./Section.astro"
   title="Proyectos"
   subtitle="Contemplamos todo lo que necesitas"
   color="black"
-  id="powerwall"
+  id="proyectos"
 >
   <div slot="footer" class="gap-x-6 flex mx-auto">
     <a
@@ -25,10 +25,10 @@ import Section from "./Section.astro"
 
   <img
     slot="background"
-    alt="Solar y Powerwall"
+    alt="Proyectos"
     class="h-full w-full object-cover object-center"
-    src="powerwall.avif"
-    id="bg-image-powerwall"
+    src="proyectos.avif"
+    id="bg-image-proyectos"
   />
 </Section>
 
@@ -45,12 +45,12 @@ import Section from "./Section.astro"
   }
 
   let imageElement = document.querySelector(
-    "#bg-image-powerwall"
+    "#bg-image-proyectos"
   ) as HTMLImageElement
 
   if (isEdge()) {
-    imageElement.src = "powerwall.webp"
+    imageElement.src = "proyectos.webp"
   } else {
-    imageElement.src = "powerwall.avif"
+    imageElement.src = "proyectos.avif"
   }
 </script>

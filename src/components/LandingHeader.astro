@@ -8,9 +8,10 @@ import Logo from "./Logo.astro"
 >
   <div class="flex flex-grow basis-0 ">
     <!-- <a href="./"><Logo /></a> -->
-    <a href="./"><img src="./Logo.png" alt="Logo Alvaro"  class="transition-colors bg-slate-500/50 w-6/12  " ></a>
+    <a href="./"><img src="./Logo.png" alt="Logo Alvaro"  class="transition-colors bg-slate-500/50 w-7/12 md:w-4/12  " ></a>
   </div>
 
+  <!-- NavBar extendida -->
   <nav class="hidden xl:block sm:hidden">
     <ul
       class="flex text-sm bg-slate-500/50 [&>li>a]:transition-colors [&>li>a]:duration-500 [&>li>a]:text-current 
@@ -20,8 +21,9 @@ import Logo from "./Logo.astro"
       <li><a href="#model-3">Casa 3</a></li>
       <!-- <li><a href="#model-x">Casa X</a></li> -->
       <li><a href="#model-y">Casa Y</a></li>
-      <li><a href="#powerwall">Proyectos</a></li>
+      <li><a href="#proyectos">Proyectos</a></li>
       <li><a href="#accesorios">Construcción</a></li>
+      <li><a href="#accesorios">Contacto</a></li>
     </ul>
   </nav>
 
@@ -30,15 +32,15 @@ import Logo from "./Logo.astro"
       class="flex bg-slate-500/50 text-sm [&>li>a]:transition-colors [&>li>a]:duration-500 [&>li>a]:text-current 
       [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2"
     >
-      <li class="hidden xl:block sm:hidden"><a href="#">Tienda</a></li>
-      <li class="hidden xl:block sm:hidden"><a href="#">Cuenta</a></li>
+      <!-- <li class="hidden xl:block sm:hidden"><a href="#">Tienda</a></li>
+      <li class="hidden xl:block sm:hidden"><a href="#">Cuenta</a></li> -->
       <li><a id="menu-btn" href="#">Menú</a></li>
     </ul>
   </nav>
 
   <nav id="modal-menu" class=" hidden xl:hidden flex flex-col bg-slate-500/50 fixed top-0 left-0 right-0 bottom-0 ">
     <button id="close-btn" class=" w-screen flex justify-end p-4">
-      <img  class="text-white h-6 " src="/close-icon.svg" alt="close image">
+      <img  class="text-white h-4 " src="/close-icon.svg" alt="close image">
     </button>
       <ul
       class="flex flex-col mt-2 
@@ -55,7 +57,7 @@ import Logo from "./Logo.astro"
         <li><a class="hover:bg-slate-100" href="#model-3">Casa 3</a></li>
         <!-- <li><a class="hover:bg-slate-100" href="#model-x">Casa X</a></li> -->
         <li><a class="hover:bg-slate-100" href="#model-y">Casa Y</a></li>
-        <li><a class="hover:bg-slate-100" href="#powerwall">Proyectos</a></li>
+        <li><a class="hover:bg-slate-100" href="#proyectos">Proyectos</a></li>
         <li><a class="hover:bg-slate-100" href="#accesorios">Construcción</a></li>
     </ul>
   </nav>
