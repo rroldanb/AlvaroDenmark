@@ -6,16 +6,25 @@ import Section from "./Section.astro"
   title="Construcción"
   subtitle="Construimos tus sueños"
   color="white"
-  id="accesorios"
+  id="construccion"
   showFooterContent="true"
+
+  displayCard1="inline-block"
+  titleCard1=""
+  boldCard1=""
+  detailCard1=""
+  
+  displayCard2="inline-block"
+  titleCard2=""
+  boldCard2=""
+  detailCard2=""
+  
+  displayCard3="inline-block"
+  titleCard3=""
+  boldCard3=""
+  detailCard3=""
 >
   <div slot="footer" class="gap-x-6 flex mx-auto">
-    <!-- <a
-      class="border-[3px] border-black bg-black text-sm rounded font-medium text-white px-12 py-2 inline-block transition-colors duration-300 hover:border-gray-800 hover:bg-gray-800"
-      href="#"
-    >
-      Cotizar ahora</a
-    > -->
     <a
       class="bg-white text-sm rounded font-medium px-12 py-2 transition-colors hover:bg-black hover:text-white inline-flex justify-center items-center text-black"
       href="#"
@@ -26,10 +35,10 @@ import Section from "./Section.astro"
 
   <img
     slot="background"
-    alt="Accesorios"
+    alt="Construcción"
     class="h-full w-full object-cover object-center"
-    src="accessories.avif"
-    id="bg-image-accessories"
+    src="construccion.avif"
+    id="bg-image-construccion"
   />
 </Section>
 
@@ -46,12 +55,12 @@ import Section from "./Section.astro"
   }
 
   let imageElement = document.querySelector(
-    "#bg-image-accessories"
+    "#bg-image-construccion"
   ) as HTMLImageElement
 
   if (isEdge()) {
-    imageElement.src = "accessories.webp"
+    imageElement.src = "construccion.webp"
   } else {
-    imageElement.src = "accessories.avif"
+    imageElement.src = "construccion.avif"
   }
 </script>

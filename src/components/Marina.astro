@@ -6,7 +6,7 @@ import Section from "./Section.astro";
   title="Casa Marina"
   subtitle="Agenda una visita"
   color="black"
-  id="model-s"
+  id="marina"
 
   displayCard1="inline-block"
   titleCard1="Descripción"
@@ -45,7 +45,7 @@ import Section from "./Section.astro";
     slot="background"
     alt="Model S"
     class="h-full w-full object-cover object-center"
-    src="model-s.avif"
+    src="marina.avif"
     id="bg-image-models"
   />
 </Section>
@@ -65,8 +65,8 @@ import Section from "./Section.astro";
   let imageElement = document.querySelector("#bg-image-models") as HTMLImageElement; // TypeScript
 
   if (isEdge()) {
-    imageElement.src = "model-s.webp";
+    imageElement.src = "marina.webp";
   } else {
-    imageElement.src = "model-s.avif";
+    imageElement.src = "marina.avif";
   }
 </script>

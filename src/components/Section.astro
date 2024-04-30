@@ -8,6 +8,7 @@ const textColor = `text-${color}`;
 import FooterMenu from './FooterMenu.astro';
 ---
 
+
 <section
   class="landing-section bg-black h-screen w-auto text-center overflow-hidden relative"
   data-header-color={color}
@@ -23,6 +24,10 @@ import FooterMenu from './FooterMenu.astro';
       </p>
     </header>
     
+    <div class="z-10">
+      <slot name="before" />
+    </div>
+
     <footer class="flex flex-col flex-grow justify-end pb-20 z-30">
       <section class={`${textColor}   w-full xl:w-2/3 mx-auto flex flex-col md:flex-row  mb-2 `}>
         <div class={`${displayCard1} mx-2 md:mx-4 lg:mx-6 w-12/12 md:w-4/12 bg-slate-500/50 rounded-lg`} >
@@ -54,6 +59,7 @@ import FooterMenu from './FooterMenu.astro';
         </div>
 
       </section>
+
       <slot name="footer" />
       <!-- Contidionally load footer: -->
       {showFooterContent && <FooterMenu />}
