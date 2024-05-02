@@ -7,7 +7,6 @@ import Section from "./Section.astro"
   subtitle="Construimos tus sueños"
   color="white"
   id="construccion"
-  showFooterContent="true"
 
   displayCard1="inline-block"
   titleCard1=""
@@ -24,14 +23,23 @@ import Section from "./Section.astro"
   boldCard3=""
   detailCard3=""
 >
-  <div slot="footer" class="gap-x-6 flex mx-auto">
-    <a
-      class="bg-white text-sm rounded font-medium px-12 py-2 transition-colors hover:bg-black hover:text-white inline-flex justify-center items-center text-black"
-      href="#"
-    >
-      Saber más</a
-    >
-  </div>
+<div slot="footer" class="gap-x-6 flex mx-auto">
+
+  <a
+  class="border-[3px] border-white bg-white/5 backdrop-blur-sm text-sm rounded 
+  font-medium text-white px-2 lg:px-12 py-2 inline-block hover:bg-white hover:text-black transition-colors"
+    href="#"
+  >
+    Saber más</a
+  >
+  <a
+  class="border-[3px] border-white bg-white/5 backdrop-blur-sm text-sm rounded 
+  font-medium text-white px-2 lg:px-12 py-2 inline-block hover:bg-white hover:text-black transition-colors"
+  href="#contacto"
+>
+  Contacto</a
+>
+</div>
 
   <img
     slot="background"

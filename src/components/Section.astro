@@ -14,12 +14,13 @@ import FooterMenu from './FooterMenu.astro';
   data-header-color={color}
   id={id}
 >
-  <div class="z-30 relative h-full pt-8 md:pt-12 flex flex-col  bg-green-800/20">
-    <header class="w-auto p-5 mx-auto  mb-0 md:mb-20">
-      <h2 class={`${textColor} pt-0 sm:text-[1rem] md:text-[2rem] bg-slate-500/50`}>
+<div class="z-30 relative h-full pt-14 md:pt-3 xl:pt-14 flex flex-col  bg-green-800/20">
+  <!-- Hero -->
+    <header class="w-auto px-3 py-1 mx-auto rounded-lg bg-slate-800/50 mb-0 md:mb-20">
+      <h2 class={`${textColor} pt-0 text-2xl md:text-2xl `}>
         {title}
       </h2>
-      <p class={`${textColor} text-sm bg-slate-500/50`}>
+      <p class={`${textColor} text-sm `}>
         {subtitle}
       </p>
     </header>
@@ -30,7 +31,8 @@ import FooterMenu from './FooterMenu.astro';
 
     <footer class="flex flex-col flex-grow justify-end pb-20 z-30">
       <section class={`${textColor}   w-full xl:w-2/3 mx-auto flex flex-col md:flex-row  mb-2 `}>
-        <div class={`${displayCard1} mx-2 md:mx-4 lg:mx-6 w-12/12 md:w-4/12 bg-slate-500/50 rounded-lg`} >
+        <!-- Card 1 -->
+        <div class={`${displayCard1} mx-2 md:mx-4 lg:mx-6 w-12/12 md:w-4/12 bg-slate-800/50 rounded-lg `} >
           <h3 class="font-bold pt-3 text-[1.2rem]">
             {titleCard1}
           </h3>
@@ -39,7 +41,8 @@ import FooterMenu from './FooterMenu.astro';
             <strong> {boldCard1} </strong> {detailCard1}
           </p>        
         </div>
-        <div class={`${displayCard2} mx-2 md:mx-4 lg:mx-6 w-12/12 md:w-4/12 bg-slate-500/50 rounded-lg`} >
+        <!-- Card 2 -->
+        <div class={`${displayCard2} mx-2 md:mx-4 lg:mx-6 w-12/12 md:w-4/12 bg-slate-800/50 rounded-lg `} >
           <h3 class="font-bold pt-3 text-[1.2rem]">
             {titleCard2}
           </h3>
@@ -48,7 +51,8 @@ import FooterMenu from './FooterMenu.astro';
             <strong> {boldCard2} </strong> {detailCard2}
           </p>        
         </div>
-        <div class={`${displayCard3} mx-2 md:mx-4 lg:mx-6 w-12/12 md:w-4/12 bg-slate-500/50 rounded-lg`} >
+        <!-- Card 3 -->
+        <div class={`${displayCard3} mx-2 md:mx-4 lg:mx-6 w-12/12 md:w-4/12 bg-slate-800/50 rounded-lg `} >
           <h3 class="font-bold pt-3 text-[1.2rem]">
             {titleCard3}
           </h3>

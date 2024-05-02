@@ -5,7 +5,7 @@ import Section from "./Section.astro";
 <Section
   title="Casa Marina"
   subtitle="Agenda una visita"
-  color="black"
+  color="white"
   id="marina"
 
   displayCard1="inline-block"
@@ -28,22 +28,26 @@ import Section from "./Section.astro";
 
 
   <div slot="footer" class="gap-x-6 flex mx-auto">
-    <!-- <a
-      class="border-[3px] border-gray-600 bg-gray-600 text-sm rounded font-medium text-white px-12 py-2 inline-block transition-colors hover:border-gray-500 hover:bg-gray-500"
-      href="#"
-    >
-      Pedido personalizado</a> -->
+
     <a
-      class="bg-white text-sm rounded font-medium px-12 py-2 transition-colors hover:bg-black hover:text-white inline-flex justify-center items-center text-black"
+    class="border-[3px] border-white bg-white/5 backdrop-blur-sm text-sm rounded 
+    font-medium text-white px-2 lg:px-12 py-2 inline-block hover:bg-white hover:text-black transition-colors"
       href="#"
     >
       Saber más</a
     >
+    <a
+    class="border-[3px] border-white bg-white/5 backdrop-blur-sm text-sm rounded 
+    font-medium text-white px-2 lg:px-12 py-2 inline-block hover:bg-white hover:text-black transition-colors"
+    href="#contacto"
+  >
+    Contacto</a
+  >
   </div>
 
   <img
     slot="background"
-    alt="Model S"
+    alt="Casa Marina"
     class="h-full w-full object-cover object-center"
     src="marina.avif"
     id="bg-image-models"
