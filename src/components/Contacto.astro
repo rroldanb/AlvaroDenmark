@@ -7,7 +7,7 @@ import Section from "./Section.astro";
   subtitle=""
   color="white"
   id="contacto"
-  showFooterContent="true"
+
 
   displayCard1="hidden"
   titleCard1=""
@@ -47,16 +47,16 @@ import Section from "./Section.astro";
           <div class="grid md:grid-cols-2 ">
             <div class="h-full pr-6 ">
               <p
-                class="mb-4 text-gray-600 dark:text-slate-200 text-justify text-sm"
+                class="mb-4 text-gray-600 dark:text-slate-200 text-justify text-sm hidden sm:hidden lg:block"
               >
                 Class aptent taciti sociosqu ad litora torquent per conubia
                 nostra, per inceptos himenaeos. Duis nec ipsum orci. Class
                 aptent taciti sociosqu ad litora torquent per conubia nostra,
                 per inceptos himenaeos. Duis nec ipsum orci.
               </p>
-              <ul class="mb-6 md:mb-0">
+              <ul class="mb-6 md:mb-0 " >
                 <!-- Direccion -->
-                <li class="flex justify-between">
+                <li class="flex justify-between items-center">
                   <div
                     class="flex h-10 w-10 items-center justify-center rounded text-yellow-600 dark:text-yellow-500"
                   >
@@ -83,14 +83,14 @@ import Section from "./Section.astro";
                       <path d="M19 18v.01"></path>
                     </svg>
                   </div>
-                  <div class="ml-4 mb-4">
+                  <div class="ml-4 mb-2">
                     <p class="text-gray-600 dark:text-slate-200 text-end">
                       Av. Borgoño 26230, Concón
                     </p>
                   </div>
                 </li>
                 <!-- Telefono -->
-                <li class="flex justify-between">
+                <li class="flex justify-between items-center">
                   <div
                     class="flex h-10 w-10 items-center justify-center rounded text-yellow-600 dark:text-yellow-500"
                   >
@@ -114,7 +114,7 @@ import Section from "./Section.astro";
                       ></path>
                     </svg>
                   </div>
-                  <div class="ml-4 mb-4">
+                  <div class="ml-4 mb-2">
                     <p class="text-gray-600 dark:text-slate-200 text-end">
                     +569 8888 9999
                     </p>
@@ -124,7 +124,7 @@ import Section from "./Section.astro";
                   </div>
                 </li>
                 <!-- Correo -->
-                <li class="flex justify-between">
+                <li class="flex justify-between items-center">
                   <div
                     class="flex h-10 w-10 items-center justify-center rounded text-yellow-600 dark:text-yellow-500"
                   >
@@ -147,55 +147,57 @@ import Section from "./Section.astro";
                       ></path>
                     </svg>
                   </div>
-                  <div class="ml-4 mb-4">
-                    <p class="text-gray-600 dark:text-slate-200 text-end">
-                      <a href="#">cmmodular@gmail.com</a>
+                  <div class="ml-4 mb-2">
+                    <p class="text-gray-600 dark:text-slate-200 text-end font-extrabold hover:text-blue-600">
+                      <a href="mailto:cmmodular@gmail.com ">cmmodular@gmail.com</a>
                     </p>
                   </div>
                 </li>
                 <!-- Horario enunciado-->
-                <div class="ml-4">
-                  <h3
-                    class="mb-2 font-medium leading-6 text-gray-900 dark:text-white text-end underline"
-                  >
-                    Horario de Atención
-                  </h3>
-                </div>
                 <!-- Horario detalle-->
-                <li class="flex justify-between">
-                  <div
-                    class="flex h-10 w-10 items-center justify-center rounded text-yellow-600 dark:text-yellow-500"
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      class="h-6 w-6"
+                <li class="flex-col items-center">
+                  <div class="ml-4">
+                    <h3
+                      class="mb-2 font-medium leading-6 text-gray-900 dark:text-white text-end underline"
                     >
-                      <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path>
-                      <path d="M12 7v5l3 3"></path>
-                    </svg>
+                      Horario de Atención
+                    </h3>
                   </div>
-                  <div class="ml-4 mb-4 text-end">
-                    <p class="text-gray-600 dark:text-slate-200">
-                      Lunes a Viernes: 08:00 - 17:00
-                    </p>
-                    <p class="text-gray-600 dark:text-slate-200">
-                      Sábados: 08:00 - 12:00
-                    </p>
+                  <div class="flex justify-between ">
+                    <div
+                      class="flex h-10 w-10 items-center justify-center rounded text-yellow-600 dark:text-yellow-500"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="h-6 w-6"
+                      >
+                        <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path>
+                        <path d="M12 7v5l3 3"></path>
+                      </svg>
+                    </div>
+                    <div class="ml-4 mb-2 text-end">
+                      <p class="text-gray-600 dark:text-slate-200">
+                        Lunes a Viernes: 08:00 - 17:00
+                      </p>
+                      <p class="text-gray-600 dark:text-slate-200">
+                        Sábados: 08:00 - 12:00
+                      </p>
+                    </div>
                   </div>
                 </li>
               </ul>
             </div>
             <!-- Mapa -->
             <div class="block w-full shrink-0 grow-0 basis-auto lg:flex pb-1">
-              <div class="h-[350px] w-full">
+              <div class="h-[150px] sm:h-[150px] lg:h-[350px] w-full">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d837.2522069985718!2d-71.506904!3d-32.924365!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689c32f0568c42d%3A0xc33436e91e83d6db!2sAM%20Construcciones%20Modulares!5e0!3m2!1sen!2scl!4v1714451237815!5m2!1sen!2scl"
                   class="left-0 top-0 h-full w-full rounded-lg"
@@ -216,11 +218,11 @@ import Section from "./Section.astro";
     </section>
   </div>
 
-  <div slot="footer" class="gap-x-6 flex mx-auto">
-    <nav >
+  <div slot="footer" class="gap-x-6 flex mx-auto ">
+    <!-- <nav class="flex sm:hidden" >
       <ul
         class="flex text-sm bg-slate-800/50 [&>li>a]:transition-colors [&>li>a]:duration-500 [&>li>a]:text-white 
-        [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2"
+        [&>li>a]:font-medium [&>li>a]:inline-block [&>li>a]:px-4 [&>li>a]:py-2 "
       >
         <li><a href="#marina">Casa Marina</a></li>
         <li><a href="#lago">Casa Lago</a></li>
@@ -229,7 +231,7 @@ import Section from "./Section.astro";
         <li><a href="#construccion">Construcción</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
-    </nav>
+    </nav> -->
   </div>
 
   <img
